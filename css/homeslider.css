@@ -1,0 +1,38 @@
+h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin: 15px 10px;
+    
+}
+.horizontal_slider {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+.horizontal_slider::-webkit-scrollbar {
+    display: none;
+}
+.slider_container {
+    display: block;
+    white-space: nowrap;
+}
+.item {
+    display: inline-block;
+    margin-right: 10px;
+}
+.item img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+@media only screen and (max-width: 600px) {
+    .item img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
